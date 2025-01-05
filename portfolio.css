@@ -1,0 +1,83 @@
+.carousel-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Varsayılan scroll-margin-top */
+section {
+    scroll-margin-top: 80px; /* Navbar yüksekliği */
+}
+
+@media (max-width: 768px) {
+    section {
+        scroll-margin-top: 0; /* Mobil cihazlar için scroll-margin-top sıfırlanır */
+    }
+}
+
+/* Bayraklı dropdown için stil */
+#language-select {
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px 15px;
+    padding-left: 30px;
+    /* Resim ile metin arasında boşluk */
+}
+
+/* Bayraklar dropdown'da görünsün */
+#language-select option {
+    padding-left: 30px;
+}
+
+
+
+/* Dil seçme kutusunu sağa yerleştir */
+#language-select {
+    position: absolute;
+    right: 10px;
+    /* Sağdan 10px mesafe */
+    top: 50%;
+    transform: translateY(-50%);
+    /* Dikeyde tam ortalama */
+}
+
+/* Butonun sağ alt köşeye yerleşmesi */
+#toggleTheme {
+    position: fixed;
+    bottom: 20px;
+    /* Alt taraftan 20px mesafe */
+    right: 20px;
+    /* Sağ taraftan 20px mesafe */
+    z-index: 1000;
+    /* Butonun diğer içeriklerin önünde görünmesini sağlar */
+}
+
+/* Karanlık tema için */
+.dark-theme {
+    background-color: #333333;
+    /* Koyu gri renk */
+    color: #ffffff;
+    /* Yazı rengi beyaz */
+}

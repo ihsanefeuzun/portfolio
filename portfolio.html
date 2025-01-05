@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ihsan Efe Uzun</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="portfolio.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Sticky Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="https://cdn-icons-png.flaticon.com/512/4208/4208483.png" alt="Portfolio" width="50"
+                    height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#about-me" data-lang="tr">İhsan Efe Uzun</a>
+                        <a class="nav-link d-none" href="#about-me" data-lang="en">Ihsan Efe Uzun</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects" data-lang="tr">Projelerim</a>
+                        <a class="nav-link d-none" href="#projects" data-lang="en">My Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills" data-lang="tr">Yetenekler</a>
+                        <a class="nav-link d-none" href="#skills" data-lang="en">Computer Skills</a>
+                    </li>
+                    <li class="nav-item">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" data-lang="tr">İletişim</a>
+                        <a class="nav-link d-none" href="#contact" data-lang="en">Contact</a>
+                    </li>
+                    <a class="nav-link"
+                        href="https://drive.google.com/drive/folders/1_h1y6ctDcgfnKu-FYIfYfOF44s1z7OCs?usp=drive_link"
+                        data-lang="tr">CV</a>
+                    <a class="nav-link d-none"
+                        href="https://drive.google.com/drive/folders/1_h1y6ctDcgfnKu-FYIfYfOF44s1z7OCs?usp=drive_link"
+                        data-lang="en">Resume</a>
+                    </li>
+                </ul>
+                <select id="language-select" class="form-select form-select-sm w-auto" aria-label="Language select">
+                    <option value="tr" data-icon="https://flagcdn.com/w40/tr.png">Türkçe</option>
+                    <option value="en" data-icon="https://flagcdn.com/w40/gb.png">English</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+
+    <!-- JavaScript to Close Navbar -->
+    <script>
+        document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                const navbarCollapse = document.querySelector('.navbar-collapse');
+                if (navbarCollapse.classList.contains('show')) {
+                    const bsCollapse = new bootstrap.Collapse(navbarCollapse);
+                    bsCollapse.hide();
+                }
+            });
+        });
+    </script>
+
+    <!-- Include Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+
+    <div class="container mt-4">
+        <h1 data-lang="tr">Hoş geldiniz!</h1>
+        <h1 class="d-none" data-lang="en">Welcome!</h1>
+    </div>
+
+    <section id="about-me" class="container mt-3">
+        <h2 data-lang="tr">Hakkımda</h2>
+        <h2 class="d-none" data-lang="en">About Me</h2>
+        <div class="row d-flex align-items-center">
+            <div class="col-md-4 d-flex justify-content-center">
+                <img src="https://media.licdn.com/dms/image/v2/D4D03AQFnZBbk3aTNDA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1712086844587?e=1740614400&v=beta&t=HfZWZt8DZeTc_b4PJJbQJgqlyifRrQEe96lMU0XIotk"
+                    alt="İhsan Efe Uzun" class="img-fluid rounded-circle" width="250" height="250">
+            </div>
+            <div class="col-md-8 d-flex align-items-center mt-3">
+                <p data-lang="tr">
+                    Merhaba, ben İhsan Efe Uzun. Yazılım mühendisiyim. 2024 yılında Yaşar Üniversitesi'nden tam burslu
+                    olarak,
+                    <strong>bölüm
+                        ikincisi</strong> olarak mezun oldum.
+                    Daha önce yazılım test alanında çalıştım. Ayrıca, yurtdışından arkadaşlarımla da projeler
+                    geliştirdik. Web ve mobil geliştirmeye ilgim var. Daima öğrenmeye açığım. CV dokümanıma ulaşmak
+                    isterseniz
+                    yukarıdan ulaşabilirsiniz.
+                    <br><br>
+                    <strong>Hobilerim:</strong> Satranç, Fotoğrafçılık, Futbol, Video oyunları, Sinema
+                    <br>
+                    <strong>Dil Yetkinliklerim:</strong> İngilizce (C1), Almanca (A2)
+                </p>
+                <p class="d-none" data-lang="en">
+                    Hi everyone. I am İhsan Efe Uzun, a Software Engineer. I graduated from Yaşar University in 2024
+                    with a full
+                    scholarship, ranked <strong>second in my department</strong>.
+                    I previously worked in software testing. Additionally, I developed projects with friends from
+                    abroad. I am interested in web and mobile development. I am always eager to learn. If you'd like to
+                    view my CV, you can find it above.
+                    <br><br>
+                    <strong>Hobbies:</strong> Chess, Photography, Football, Video Games, Cinema
+                    <br>
+                    <strong>Language Proficiency:</strong> English (C1), German (A2)
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container mt-5">
+        <h2 data-lang="tr">Projelerim</h2>
+        <h2 class="d-none" data-lang="en">My Projects</h2>
+        <div class="row align-items-stretch">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQz8F9ZTR8OZhfzXwIzHP0AEvYDSqv5nRkmM8eWBBGR3LJB_8vZ"
+                        class="card-img-top" alt="Proje 1">
+                    <div class="card-body">
+                        <h5 data-lang="tr" class="card-title">Veteriner Kliniği Kontrol Sistemi</h5>
+                        <h5 class="card-title d-none" data-lang="en">Vet Clinic Management System</h5>
+                        <p data-lang="tr" class="card-text">Veteriner Klinik Yönetim Sistemi ve Müşteri Bilgi Sistemi,
+                            veteriner
+                            kliniklerinin operasyonlarını kolaylaştırmak ve evcil hayvan sahiplerinin deneyimini
+                            iyileştirmek için
+                            tasarlanmıştır. Veterinerler için web sitesi ve hayvan sahipleri için Android uygulama
+                            geliştirildi.</p>
+                        <p class="d-none card-text" data-lang="en">The Vet Clinic Management System and Customer
+                            Information System
+                            is designed to streamline the operations of veterinary clinics and enhance the experience
+                            for pet owners.
+                            A website was developed for veterinarians, and an Android application was created for pet
+                            owners.</p>
+                        <a data-lang="tr" href="https://github.com/ihsanefeuzun/Term-Project"
+                            class="btn btn-primary">Detaylar</a>
+                        <a data-lang="en" href="https://github.com/ihsanefeuzun/Term-Project"
+                            class="btn btn-primary d-none">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3787/3787061.png" class="card-img-top"
+                        alt="Proje 2">
+                    <div class="card-body">
+                        <h5 data-lang="tr" class="card-title">Kan Donör Servisi</h5>
+                        <h5 class="card-title d-none" data-lang="en">Blood Donor Service</h5>
+                        <p data-lang="tr" class="card-text">İhtiyaç sahiplerinin kan bulabilmesi ve periyodik olarak
+                            kontrol eden,
+                            Microsoft Azure servislerini kullanarak microservice tabanlı bir sistem geliştirdim.</p>
+                        <p data-lang="en" class="d-none card-text">I developed a microservice-based system using
+                            Microsoft Azure
+                            services to help those in need find blood donors and for periodic monitoring.</p>
+                        <a data-lang="tr" href="https://github.com/ihsanefeuzun/SE-4458-Final"
+                            class="btn btn-primary">Detaylar</a>
+                        <a data-lang="en" href="https://github.com/ihsanefeuzun/SE-4458-Final"
+                            class="btn btn-primary d-none">Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQim4HH6UPeGCySKugLoioJa2hr8GodZG7v3g&s"
+                        class="card-img-top" alt="Proje 2">
+                    <div class="card-body">
+                        <h5 data-lang="tr" class="card-title">Akıllı Yatak</h5>
+                        <h5 class="card-title d-none" data-lang="en">Smart Bed</h5>
+                        <p data-lang="tr" class="card-text">Amerika'daki öğrenci arkadaşlarımızla ortak yaptığımız,
+                            hayatını yatakta geçiren hastalar için m5Stack cihazlarıyla geliştirdiğimiz projedir.
+                            Yatakta uzun süre sabit kalmış kişilerin bakıcılarını uyaran bir sistemdir.</p>
+                        <p data-lang="en" class="d-none card-text">
+                            This is a project we developed in collaboration with our student friends in the United
+                            States, using m5Stack devices for patients who spend their lives in bed.
+                            It is a system that alerts caregivers about individuals who have remained stationary in bed
+                            for extended periods.
+                        </p>
+                        <a data-lang="tr" href="https://github.com/ihsanefeuzun/SmartBed"
+                            class="btn btn-primary">Detaylar</a>
+                        <a data-lang="en" href="https://github.com/ihsanefeuzun/SmartBed"
+                            class="btn btn-primary d-none">Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="toggleTheme" type="button"
+        aria-expanded="false" aria-label="Toggle theme (light)">
+        <i class="fas fa-sun my-1 theme-icon-active" id="themeIcon"></i>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+    </button>
+    <section id="skills" class="container mt-5">
+        <h2 data-lang="tr">Yetenekler</h2>
+        <h2 class="d-none" data-lang="en">Computer Skills</h2>
+        <div class="row">
+            <!-- Programlama Dilleri -->
+            <div class="col-md-4">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://cdn-icons-png.flaticon.com/512/4854/4854186.png"
+                                class="img-fluid rounded-start" alt="Programlama Dilleri">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 data-lang="tr" class="card-title">Programlama Dilleri</h5>
+                                <h5 class="card-title d-none" data-lang="en">Programming Languages</h5>
+                                <p class="card-text">C, C++, Java, Kotlin, Python, HTML, CSS, JS, C#</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Framework -->
+            <div class="col-md-4">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2519/2519420.png"
+                                class="img-fluid rounded-start" alt="Framework">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="bi bi-diagram-3"></i> Framework</h5>
+                                <p class="card-text">ASP.net Core, Django</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Veri Tabanı -->
+            <div class="col-md-4">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://cdn-icons-png.flaticon.com/512/9850/9850774.png"
+                                class="img-fluid rounded-start" alt="Veri Tabanı">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 data-lang="tr" class="card-title">Veri Tabanı</h5>
+                                <h5 class="card-title d-none" data-lang="en">Database</h5>
+                                <p class="card-text">MySQL, SQLite</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Test -->
+            <div class="col-md-4 mt-3">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://cdn-icons-png.flaticon.com/512/825/825590.png"
+                                class="img-fluid rounded-start" alt="Test">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="bi bi-bug"></i> Test</h5>
+                                <p class="card-text">Selenium, Eclipse Jubula, Postman</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Robotik -->
+            <div class="col-md-4 mt-3">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://cdn-icons-png.flaticon.com/512/6134/6134346.png"
+                                class="img-fluid rounded-start" alt="Robotik">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 data-lang="tr" class="card-title">Robotik</h5>
+                                <h5 class="card-title d-none" data-lang="en">Robotic</h5>
+                                <p class="card-text">ROS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- İşletim Sistemi -->
+            <div class="col-md-4 mt-3">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://cdn-icons-png.flaticon.com/512/4260/4260932.png"
+                                class="img-fluid rounded-start" alt="İşletim Sistemi">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 data-lang="tr" class="card-title">İşletim Sistemi</h5>
+                                <h5 class="card-title d-none" data-lang="en">OS</h5>
+                                <p class="card-text">Windows, Ubuntu</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Ofis ve Araçlar -->
+            <div class="col-md-4 mt-3">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://cdn-icons-png.flaticon.com/512/5109/5109515.png"
+                                class="img-fluid rounded-start" alt="Ofis ve Araçlar">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 data-lang="tr" class="card-title">Araçlar</h5>
+                                <h5 class="card-title d-none" data-lang="en">Tools</h5>
+                                <p class="card-text">Microsoft Office, Visual Paradigm, MSProject</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bulut Hizmetleri -->
+            <div class="col-md-4 mt-3">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3983/3983126.png"
+                                class="img-fluid rounded-start" alt="Bulut Hizmetleri">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 data-lang="tr" class="card-title">Bulut Servisleri</h5>
+                                <h5 class="card-title d-none" data-lang="en">Cloud Services</h5>
+                                <p class="card-text">Google, Microsoft Azure</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container mt-5">
+        <h2 data-lang="tr">İletişim</h2>
+        <h2 class="d-none" data-lang="en">Contact</h2>
+
+        <div class="row align-items-center">
+            <div class="col-md-6 d-flex justify-content-center mb-4">
+                <img src="https://cdn-icons-png.flaticon.com/512/1935/1935165.png" alt="Contact Image" class="img-fluid"
+                    style="max-width: 80%; max-height: 80%;">
+            </div>
+            <div class="col-md-6">
+                <form id="contact-form">
+                    <div class="mb-3">
+                        <label for="name" class="form-label" data-lang="tr">Adınız:</label>
+                        <label for="name" class="form-label d-none" data-lang="en">Your Name:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Adınızı yazın" data-lang="tr"
+                            required>
+                        <input type="text" class="form-control d-none" id="name" placeholder="Enter your name"
+                            data-lang="en" required readonly>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label" data-lang="tr">E-posta:</label>
+                        <label for="email" class="form-label d-none" data-lang="en">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="E-posta adresinizi yazın"
+                            data-lang="tr" required>
+                        <input type="email" class="form-control d-none" id="email" placeholder="Enter your email"
+                            data-lang="en" required readonly>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="message" class="form-label" data-lang="tr">Mesaj:</label>
+                        <label for="message" class="form-label d-none" data-lang="en">Message:</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Mesajınızı yazın"
+                            data-lang="tr" required></textarea>
+                        <textarea class="form-control d-none" id="message" rows="4" placeholder="Write your message"
+                            data-lang="en" required readonly></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" data-lang="tr">Gönder</button>
+                    <button type="submit" class="btn btn-primary d-none" data-lang="en">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-end align-items-center py-3 my-4 border-top">
+            <ul class="nav list-unstyled d-flex">
+                <!-- LinkedIn -->
+                <li class="ms-3">
+                    <a class="text-body" href="http://www.linkedin.com/in/ihsan-efe-uzun-770a04267"
+                        target="http://www.linkedin.com/in/ihsan-efe-uzun-770a04267">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="24"
+                            height="24">
+                    </a>
+                </li>
+                <!-- GitHub -->
+                <li class="ms-3">
+                    <a class="text-body" href="https://github.com/ihsanefeuzun"
+                        target="https://github.com/ihsanefeuzun">
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="24"
+                            height="24">
+                    </a>
+                </li>
+                <!-- Instagram -->
+                <li class="ms-3">
+                    <a class="text-body" href="https://www.instagram.com/ihsanefeuzun"
+                        target="https://www.instagram.com/ihsanefeuzun">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" width="24"
+                            height="24">
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "js9qHN5I8GzfhAT8L",
+            });
+        })();
+    </script>
+    <script src="portfolio.js"></script>
+</body>
+
+</html>
